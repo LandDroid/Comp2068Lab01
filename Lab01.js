@@ -1,6 +1,6 @@
 /*
-  Full Name:
-  Student ID:
+  Full Name: Landon Lyle
+  Student ID: 200421088
 
   Instructions:
     Follow the steps below. If you have any questions
