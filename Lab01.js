@@ -1,3 +1,4 @@
+console.clear();
 /*
   Full Name: Landon Lyle
   Student ID: 200421088
@@ -28,6 +29,18 @@
     Each object must have at least 2 properties.
 */
 
+console.log("Step 1");
+// Array of people objects
+console.log("My Array of people objects");
+const people =[
+                {name: "Landon", age: 38},
+                {name: "Keshia", age: 10},
+                {name: "Aaliyah", age: 13},
+                {name: "Felicity", age: 4},
+                {name: "Melissa", age: 38}
+              ];
+//Printing out array.              
+console.log(people);
 
 /*
   Step 2 (6 points):
@@ -38,6 +51,12 @@
     destructured.
 */
 
+console.log("Step 2");
+console.log("My deconstructed arrow function");
+const DestructedArrowFunc = people => {
+  console.log(people);
+};
+DestructedArrowFunc(people);
 
 /*
   Step 3 (3 points):
@@ -45,3 +64,13 @@
     Call your arrow function passing the array item
     as an argument.
 */
+console.log("Step 3");
+// Looped array function
+console.log("My for loop array function");
+const myForLoopFunc = () => {
+  for (let key in people) {
+    console.log(key);
+    console.log(people[key]);
+  }
+};
+myForLoopFunc();
