@@ -53,10 +53,12 @@ console.log(people);
 
 console.log("Step 2");
 console.log("My deconstructed arrow function");
-const DestructedArrowFunc = people => {
-  console.log(people);
-};
+const DestructedArrowFunc = people => 
+  {
+    console.log(people);
+  };
 DestructedArrowFunc(people);
+
 
 /*
   Step 3 (3 points):
@@ -64,13 +66,14 @@ DestructedArrowFunc(people);
     Call your arrow function passing the array item
     as an argument.
 */
-console.log("Step 3");
 // Looped array function
+console.log("Step 3");
 console.log("My for loop array function");
-const myForLoopFunc = () => {
-  for (let key in people) {
-    console.log(key);
-    console.log(people[key]);
-  }
+const myForLoopFunc = () => 
+{
+    for (let item in people) 
+      {
+        console.log(people[item]);
+      }
 };
 myForLoopFunc();
